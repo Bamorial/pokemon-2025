@@ -1,3 +1,5 @@
+import { SpeciesCard } from "../species";
+
 export const PokemonCard = ({ pokemon }) => {
     const { name, weight, sprites, types } = pokemon;
 
@@ -8,5 +10,6 @@ export const PokemonCard = ({ pokemon }) => {
             <div>Weight: {weight}</div>
             <div>Type: {types[0].type.name}</div>
         </div>
+        <SpeciesCard></SpeciesCard>
     </div>
 }
